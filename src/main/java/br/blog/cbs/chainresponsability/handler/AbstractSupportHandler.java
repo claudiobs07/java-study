@@ -1,5 +1,7 @@
 package br.blog.cbs.chainresponsability.handler;
 
+import java.util.List;
+
 public abstract class AbstractSupportHandler {
 
     public static int TECHNICAL = 10;
@@ -13,12 +15,12 @@ public abstract class AbstractSupportHandler {
         this.nextHandler = nextHandler;
     }
 
-    public void receiveRequest(int level, String message) {
+    public void receiveRequest(int level, List<String> actions) {
         if (this.level <= level)
-            handleRequest(message);
+            handleRequest(actions);
         if (nextHandler != null)
-            nextHandler.receiveRequest(level, message);
+            nextHandler.receiveRequest(level, actions);
     }
 
-    abstract protected void handleRequest(String message);
+    abstract protected void handleRequest(List<String> actions);
 }

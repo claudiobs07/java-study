@@ -2,6 +2,8 @@ package br.blog.cbs.chainresponsability.handler;
 
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class TechnicalSupportHandler extends AbstractSupportHandler {
 
@@ -10,8 +12,8 @@ public class TechnicalSupportHandler extends AbstractSupportHandler {
     }
 
     @Override
-    protected void handleRequest(String message) {
-        System.out.println("TechnicalSupportHandler: Processing request " + message);
+    protected void handleRequest(List<String> actions) {
+        actions.add("TechnicalSupportHandler");
     }
 
 }
