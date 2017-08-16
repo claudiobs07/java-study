@@ -47,8 +47,8 @@ public class RequestorClientTest {
         handler.receiveRequest(GENERAL, actions);
         Assert.assertEquals(actions.size(), 3);
         Assert.assertEquals(actions.get(0), "TechnicalSupportHandler");
-        Assert.assertEquals(actions.get(1), "GeneralSupportHandler");
-        Assert.assertEquals(actions.get(2), "BillingSupportHandler");
+        Assert.assertEquals(actions.get(1), "BillingSupportHandler");
+        Assert.assertEquals(actions.get(2), "GeneralSupportHandler");
     }
 
 }

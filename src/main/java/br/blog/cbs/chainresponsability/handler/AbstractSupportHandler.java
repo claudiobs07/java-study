@@ -8,7 +8,7 @@ public abstract class AbstractSupportHandler {
     public static int BILLING = 20;
     public static int GENERAL = 30;
 
-    protected  int level;
+    public  int level;
     protected AbstractSupportHandler nextHandler;
 
     public void setNextHandler(AbstractSupportHandler nextHandler) {

@@ -8,7 +8,7 @@ import java.util.List;
 public class BillingSupportHandler extends AbstractSupportHandler {
 
     public BillingSupportHandler() {
-        level = BILLING;
+        super.level = BILLING;
     }
 
     @Override

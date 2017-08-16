@@ -5,7 +5,6 @@ import br.blog.cbs.chainresponsability.handler.AbstractSupportHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Iterator;
 import java.util.List;
 
 @Component
@@ -16,10 +15,9 @@ public class RequestorClient {
 
     public  AbstractSupportHandler getHandlerChain(){
 
-        Iterator<AbstractSupportHandler> it = supportHandlers.iterator();
-        AbstractSupportHandler nextSupportHandler = it.next();
-        while (it.hasNext()) {
-            AbstractSupportHandler supportHandler = it.next();
+        supportHandlers.sort((handler1, handler2) -> (handler1.level < handler2.level ? 1 : -1));
+        AbstractSupportHandler nextSupportHandler = null;
+        for (AbstractSupportHandler supportHandler : supportHandlers) {
             supportHandler.setNextHandler(nextSupportHandler);
             nextSupportHandler = supportHandler;
         }

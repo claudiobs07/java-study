@@ -8,7 +8,7 @@ import java.util.List;
 public class GeneralSupportHandler extends AbstractSupportHandler {
 
     public GeneralSupportHandler() {
-        level = GENERAL;
+        super.level = GENERAL;
     }
 
     @Override

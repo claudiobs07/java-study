@@ -8,7 +8,7 @@ import java.util.List;
 public class TechnicalSupportHandler extends AbstractSupportHandler {
 
     public TechnicalSupportHandler() {
-        level = TECHNICAL;
+        super.level = TECHNICAL;
     }
 
     @Override
