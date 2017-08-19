@@ -1,4 +1,4 @@
-package br.blog.cbs.objfilter;
+package br.blog.cbs.filter;
 
 import br.blog.cbs.reflection.ComparatorService;
 import br.blog.cbs.reflection.Difference;

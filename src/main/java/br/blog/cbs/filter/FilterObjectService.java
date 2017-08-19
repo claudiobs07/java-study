@@ -1,4 +1,4 @@
-package br.blog.cbs.objfilter;
+package br.blog.cbs.filter;
 
 import org.springframework.stereotype.Service;
 

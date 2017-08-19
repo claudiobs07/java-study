@@ -1,7 +1,7 @@
 package br.blog.cbs.reflection;
 
-import br.blog.cbs.objfilter.FilterObjectService;
-import br.blog.cbs.objfilter.Car;
+import br.blog.cbs.filter.FilterObjectService;
+import br.blog.cbs.filter.Car;
 import junit.framework.TestCase;
 import org.apache.commons.lang3.SerializationUtils;
 import org.junit.Assert;

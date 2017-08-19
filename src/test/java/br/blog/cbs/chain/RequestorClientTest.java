@@ -1,7 +1,7 @@
-package br.blog.cbs.chainresponsability;
+package br.blog.cbs.chain;
 
 import br.blog.cbs.Application;
-import br.blog.cbs.chainresponsability.handler.AbstractSupportHandler;
+import br.blog.cbs.chain.handler.AbstractSupportHandler;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import org.testng.Assert;
 import java.util.ArrayList;
 import java.util.List;
 
-import static br.blog.cbs.chainresponsability.handler.AbstractSupportHandler.*;
+import static br.blog.cbs.chain.handler.AbstractSupportHandler.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = Application.class)

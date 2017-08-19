@@ -1,4 +1,4 @@
-package br.blog.cbs.chainresponsability.handler;
+package br.blog.cbs.chain.handler;
 
 import org.springframework.stereotype.Component;
 

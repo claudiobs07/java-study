@@ -1,7 +1,7 @@
-package br.blog.cbs.chainresponsability;
+package br.blog.cbs.chain;
 
 
-import br.blog.cbs.chainresponsability.handler.AbstractSupportHandler;
+import br.blog.cbs.chain.handler.AbstractSupportHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
